@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendamento Médico</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Agendamento de Consulta Médica</h1>
+    <form id="formAgendamento">
+      <input type="text" id="nome" placeholder="Nome do paciente" required />
+      <input type="date" id="data" required />
+      <input type="time" id="hora" required />
+      <select id="especialidade" required>
+        <option value="">Selecione a especialidade</option>
+        <option value="Clínico Geral">Clínico Geral</option>
+        <option value="Cardiologista">Cardiologista</option>
+        <option value="Dermatologista">Dermatologista</option>
+        <option value="Ortopedista">Ortopedista</option>
+      </select>
+      <button type="submit">Agendar</button>
+    </form>
+
+    <div id="consultas">
+      <h2>Consultas Agendadas</h2>
+      <ul id="listaConsultas"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
